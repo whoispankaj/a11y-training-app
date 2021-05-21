@@ -2,7 +2,7 @@ import { usePopup, Popup, Button, DeleteButton, Popper, useCloseOnOutsideClick }
 import { Placement, useFocusTrap } from "@workday/canvas-kit-react-popup";
 import React from "react";
 
-const APopup = (props: React.PropsWithChildren<{heading?: string, placement?: Placement, onClose?: () => void}>) => {
+export const APopup = (props: React.PropsWithChildren<{heading?: string, placement?: Placement, onClose?: () => void}>) => {
     const {placement, onClose, heading} = props;
     const {targetProps, closePopup, popperProps, stackRef} = usePopup();
     
